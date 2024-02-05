@@ -1,5 +1,7 @@
 "use client";
+
 import { useSearchParams, useRouter } from "next/navigation";
+
 import { RxCross2 } from "react-icons/rx";
 import { BsFillMicFill } from "react-icons/bs";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -22,7 +24,7 @@ export default function SearchBox() {
     >
       <input
         type="text"
-        className="w-full focus:outline-none "
+        className="w-full focus:outline-none"
         value={term}
         onChange={(e) => setTerm(e.target.value)}
       />

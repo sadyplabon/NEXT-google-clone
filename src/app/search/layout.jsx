@@ -1,15 +1,12 @@
 import SearchHeader from "@/components/SearchHeader";
-
-export const metadata = {
-  title: "Google",
-  description: "search anything...",
-};
+import "./../globals.css";
 
 export default function SearchLayout({ children }) {
   return (
     <div>
       <SearchHeader />
       {children}
+      {/* Footer */}
     </div>
   );
 }
